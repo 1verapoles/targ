@@ -10,6 +10,11 @@
   text-transform: uppercase;
 }
 
+.wrapper-table {
+  margin: 0px auto;
+  text-align: center;
+}
+
 .add-btn {
   margin-top: 15px;
 }
