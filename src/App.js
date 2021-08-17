@@ -124,14 +124,16 @@ function App() {
             <PrimaryButton text="add post" className='add-btn' onClick={onAddPost} />
           </div>
           {isLoading && <Spinner size={SpinnerSize.medium} />}
-          {!isLoading && (<DetailsList
+          {!isLoading && <div className="wrapper-table">
+          	<DetailsList
             items={allItems}
             columns={columns}
             setKey="set"
             selectionMode={SelectionMode.none}
             layoutMode={DetailsListLayoutMode.fixedColumns}
             onRenderRow={_onRenderRow}
-          />)}
+          />
+           </div>)}
         </div>
       </div>
     </div>
