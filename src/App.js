@@ -124,7 +124,7 @@ function App() {
             <PrimaryButton text="add post" className='add-btn' onClick={onAddPost} />
           </div>
           {isLoading && <Spinner size={SpinnerSize.medium} />}
-          {!isLoading && <div className="wrapper-table">
+          {!isLoading && (<div className="wrapper-table">
           	<DetailsList
             items={allItems}
             columns={columns}
